@@ -1,0 +1,23 @@
+.note-card {
+  max-width: 420px;
+  padding: 1rem 1.25rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.note-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.note-content {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #4b5563;
+}
+

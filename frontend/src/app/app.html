@@ -1,0 +1,42 @@
+<main class="notes-container">
+  <h1>Notas</h1>
+
+  <form class="note-form" [formGroup]="noteForm" (ngSubmit)="onSubmit()">
+    <div class="form-field">
+      <label for="titulo">Título</label>
+      <input
+        id="titulo"
+        name="titulo"
+        type="text"
+        formControlName="titulo"
+        placeholder="Escribe un título..."
+      />
+    </div>
+
+    <div class="form-field">
+      <label for="contenido">Contenido</label>
+      <input
+        id="contenido"
+        name="contenido"
+        type="text"
+        formControlName="contenido"
+        placeholder="Escribe el contenido de la nota..."
+      />
+    </div>
+
+    <button type="submit" class="save-button">Guardar</button>
+  </form>
+</main>
+
+<hr class="separator" />
+
+<section class="notes-list">
+  @for (nota of notas(); track $index) {
+    <app-note-card [note]="nota" />
+  } @empty {
+    <p class="empty-notes">No hay notas guardadas.</p>
+  }
+</section>
+
+<router-outlet />
+

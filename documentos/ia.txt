@@ -1,0 +1,5 @@
+utilice ia para que modifique el package.json y puediera leer las variables de entorno del backend.
+utilice ia para los diseños de los html.
+utiilce ia para saber cuales son las formas de actualizar una señal de manera pesimista u optimista:
+-pesimista: se consume el post y espero respuesta.
+-optimista: se asume que el post saldra bien y se actualiza de inmediato.
